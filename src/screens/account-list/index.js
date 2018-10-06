@@ -1,6 +1,6 @@
 //import { BaseScreen } from '../base-screen'
 import React, { Component } from 'react'
-import { Screen, ListView, ImageBackground, Tile, Title, Divider, Subtitle, View } from '@shoutem/ui'
+import { Screen, ListView, ImageBackground, Tile, Title, Divider, Subtitle, View, Text } from '@shoutem/ui'
 
 export default class AccountListScreen extends Component {
 
@@ -67,9 +67,10 @@ export default class AccountListScreen extends Component {
     render() {
         return (
         <Screen>
-            <ListView
-                data={this.state.restaurants}
-                renderRow={this.renderRow} />
+        <ListView
+          data={this.state.restaurants}
+          renderRow={this.renderRow}
+        />
         </Screen>
         )
     }
